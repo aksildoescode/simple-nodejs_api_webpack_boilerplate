@@ -3,6 +3,7 @@ import constants from "./constants";
 
 // Remove the warning with promises
 mongoose.Promise = global.Promise;
+mongoose.set("useCreateIndex", true);
 
 //connect the db with the url provided
 
